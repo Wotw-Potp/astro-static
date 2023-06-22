@@ -2,7 +2,7 @@ version: "3"
 
 services:
   node:
-    container_name: chachat-bot-lp02__container
+    container_name: astro-static-node__container
     image: node:lts-slim
     tty: true
     ports:

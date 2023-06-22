@@ -4,5 +4,15 @@ import BaseLayout from '@/layouts/base.astro'
 ---
 
 <BaseLayout>
-  <h1>Hello World</h1>
+  <div
+    class="w-screen h-screen grid place-items-center bg-white dark:bg-slate-900"
+  >
+    <h1 class="c-heading--main">Hello World</h1>
+  </div>
 </BaseLayout>
+
+<style lang="scss">
+  .c-heading--main {
+    @apply text-6xl font-bold bg-gradient-to-r from-red-600 via-amber-600 to-sky-600 text-transparent bg-clip-text;
+  }
+</style>
