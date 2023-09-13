@@ -1,12 +1,11 @@
-import { defineConfig } from 'astro/config';
-import image from '@astrojs/image';
-
-import tailwind from "@astrojs/tailwind";
+import { defineConfig } from 'astro/config'
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
   server: {
-    host: true
+    host: true,
+    port: 3000,
   },
-  integrations: [image(), tailwind()]
-});
+  integrations: [tailwind()],
+})
