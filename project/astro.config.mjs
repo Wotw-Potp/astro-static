@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config'
-import tailwind from '@astrojs/tailwind'
+import tailwindcss from '@tailwindcss/vite'
 
 // https://astro.build/config
 export default defineConfig({
@@ -7,5 +7,7 @@ export default defineConfig({
     host: true,
     port: 3000,
   },
-  integrations: [tailwind()],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 })
