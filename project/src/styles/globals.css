@@ -1,0 +1,7 @@
+@import 'tailwindcss';
+
+@layer base {
+  address {
+    @apply not-italic;
+  }
+}
