@@ -1,7 +1,7 @@
 services:
   node:
     container_name: astro-static-node__container
-    image: node:lts-slim
+    image: node:latest
     tty: true
     ports:
       - "3000:3000"
